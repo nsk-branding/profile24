@@ -2,6 +2,42 @@
     Layout by: www.PROFILErehab.com;
 }
 
+img {
+    border: none;
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+
+/* Hide the specified image */
+img[src="/images/t2/sec-header-arrow-bk.gif"] {
+    display: none;
+    /* Hide the specified image */
+}
+
+/* Ocultar el encabezado */
+#ctl00_oMasterHeaderDiv {
+    display: none !important;
+    /* Ocultar el encabezado */
+}
+
+/* Ocultar el menú de navegación */
+.MPHeaderNavCell {
+    display: none !important;
+    /* Ocultar el menú de navegación */
+}
+
+/* Ocultar la publicidad */
+#ctl00_oMasterAdDiv {
+    display: none !important;
+    /* Ocultar la sección de publicidad */
+}
+
+/* Ocultar la barra de búsqueda y los botones */
+.MPToolsBar {
+    display: none !important;
+    /* Ocultar la barra de búsqueda */
+}
+
 span.statusDateTime {
     visibility: hidden;
 }
