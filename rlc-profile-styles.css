@@ -38,8 +38,30 @@ img[src="/images/t2/sec-header-arrow-bk.gif"] {
     /* Ocultar la barra de búsqueda */
 }
 
-span.statusDateTime {
-    visibility: hidden;
+/* Ajustar las imágenes dentro de la sección de comentarios */
+#ctl00_oCPH1_tblPComments img {
+    max-width: 100%;
+    /* Limitar las imágenes al 100% del ancho del contenedor */
+    height: auto;
+    /* Mantener la proporción de la imagen */
+    display: block;
+    /* Asegurarse de que se comporten como bloques */
+}
+
+/* Mantener el tamaño del contenedor de comentarios */
+#ctl00_oCPH1_tblPComments {
+    width: 750px;
+    /* Tamaño fijo o máximo para la sección de comentarios */
+    overflow: hidden;
+    /* Evitar que el contenido desborde el contenedor */
+}
+
+/* Ajustar la imagen de perfil */
+#ctl00_oCPH1_imgPicture {
+    height: 150px;
+    /* Ajusta la altura según tus necesidades */
+    width: 150px;
+    /* Ajusta el ancho según tus necesidades */
 }
 
 span.blacktext12 a {
@@ -47,10 +69,9 @@ span.blacktext12 a {
 }
 
 body {
-    background-color: transparent;
     margin-left: ;
     margin-bottom: ;
-    background-color: 80242f;
+    background-color: transparent;
 }
 
 img {
