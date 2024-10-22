@@ -11,7 +11,7 @@ span.blacktext12 a {
 }
 
 body {
-    background: url(http://www.profilerehab.com/pb/myspace/red_abstract_background.jpg) no-repeat fixed center bottom;
+    background-color: transparent;
     margin-left: ;
     margin-bottom: ;
     background-color: 80242f;
@@ -41,8 +41,7 @@ td {
 }
 
 table table table {
-    background-color: ;
-    background-image: url(http://www.profilerehab.com/pb/myspace/red_abstract_theme_TT.jpg);
+    background-color: transparent;
     background-position: top right;
     background-repeat: no-repeat;
     border-color: ffffff;
@@ -76,7 +75,7 @@ td.text {
 ExtendedNetwork,
 table.extendedNetwork,
 span.blacktext12 {
-    background: url(http://www.profilerehab.com/pb/myspace/red_thorns_layout_ext.jpg) no-repeat center center;
+    background-color: transparent;
     height: 149px;
     font-size: 11;
     vertical-align: top;
