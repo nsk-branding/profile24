@@ -28,9 +28,11 @@ span.blacktext12 a {
 }
 
 body {
-    background-color: transparent !important;
-    /* Asegúrate de que el fondo sea transparente */
+    background: linear-gradient(to bottom, black, transparent) !important;
+    margin-top: 0px;
+    margin-left: 0px;
 }
+
 
 table,
 tr,
