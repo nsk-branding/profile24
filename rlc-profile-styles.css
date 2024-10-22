@@ -50,8 +50,8 @@ td.text table table table tr td a {
 }
 
 td.text table table table tr td a:hover {
-    color: #ffffff !important;
-    /* Asegúrate de usar el símbolo '#' para el color */
+    color: #FFA500 !important;
+    /* Color naranja al pasar el mouse */
     border-bottom: none;
 }
 
@@ -63,6 +63,7 @@ table table table table {
     background-image: none;
 }
 
+/* Textos en color naranja con sombra */
 .blacktext12,
 .nametext,
 .btext,
@@ -72,8 +73,10 @@ table table table table {
 .redbtext,
 .blacktext10,
 .lightbluetext8 {
-    color: #ffffff !important;
-    /* Usa '#' para los colores */
+    color: #FFA500 !important;
+    /* Color naranja */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7), 0 0 25px rgba(255, 165, 0, 0.5);
+    /* Sombra del texto */
     font-family: "Century Gothic", Georgia, "Times New Roman", Times, serif;
     font-weight: bold;
 }
@@ -92,12 +95,13 @@ table table table table {
 
 /* Enlaces */
 a {
-    color: #ffffff !important;
+    color: #FFA500 !important;
+    /* Color naranja para enlaces */
     text-decoration: none;
 }
 
 a:hover {
-    color: #ffffff !important;
+    color: #FFA500 !important;
     /* Mantener el color al pasar el mouse */
 }
 
@@ -106,7 +110,6 @@ a:hover {
     width: 300px !important;
     height: 150px !important;
     padding: 0px !important;
-    background-image: url(http://www.profilerehab.com/pb/myspace/red_thorn_design_menu.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-color: transparent !important;
