@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegación Espectacular</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            /* Fondo oscuro para resaltar el navbar */
+        }
+
+        nav {
+            background-color: #333;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+            gap: 40px;
+            /* Espacio entre los botones */
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        a {
+            color: #a0a0a0;
+            text-decoration: none;
+            padding: 15px 20px;
+            /* Espaciado interno */
+            font-size: 18px;
+            /* Tamaño de fuente */
+            transition: color 0.3s ease, transform 0.3s ease;
+            /* Transiciones suaves */
+        }
+
+        a::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            /* Ajuste de la posición */
+            width: 100%;
+            height: 5px;
+            /* Grosor de la línea */
+            background-color: gold;
+            /* Color de la línea */
+            transform: translateX(-50%) scaleX(0);
+            /* Inicialmente oculta */
+            transition: transform 0.3s ease;
+            /* Transición suave para la línea */
+        }
+
+        a:hover {
+            color: white;
+            /* Cambia el color del texto al pasar el ratón */
+            transform: scale(1.1);
+            /* Efecto de aumento al pasar el ratón */
+        }
+
+        a:hover::before {
+            transform: translateX(-50%) scaleX(1);
+            /* Expande la línea inferior al pasar el ratón */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="https://www.utherverse.com/net/home.aspx" target="_blank">Home</a></li>
+            <li><a href="https://supportclassic.redlightcenter.com/support/home" target="_blank">Support</a></li>
+            <li><a href="https://forums.utherverse.com/" target="_blank">Forums</a></li>
+            <li><a href="https://www.utherverse.com/Clothing/" target="_blank">Clothing</a></li>
+            <li><a href="https://www.utherverse.com/net/search/search.aspx" target="_blank">Search</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const navLinks = document.querySelectorAll('.nav-links a');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    alert(`Has hecho clic en ${link.textContent}`);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
