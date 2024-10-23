@@ -1,0 +1,320 @@
+<style>.PROFILErehab {
+    Layout by: www.PROFILErehab.com;
+}
+
+span.statusDateTime {
+    visibility: hidden;
+}
+
+span.blacktext12 a {
+    visibility: hidden;
+}
+
+body {
+    background: url(http://www.profilerehab.com/pb/myspace/heroes_layout_claire.jpg) no-repeat fixed center bottom;
+    margin-left: ;
+    margin-bottom: ;
+    background-color: 3c3731;
+}
+
+img {
+    border: none;
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+
+td.text table table table tr td a {
+    background-color: transparent !important;
+    border-bottom: none !important;
+}
+
+td.text table table table tr td a:hover {
+    color: ffffff !important;
+    border-bottom: none;
+}
+
+table,
+tr,
+td {
+    background-color: transparent;
+    border-style: none;
+}
+
+table table table {
+    background-color: ;
+    background-image: url(http://www.profilerehab.com/pb/myspace/heroes_layout_TT.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    border-color: 222222;
+    border-style: solid;
+    border-width: 2px;
+}
+
+table table table table {
+    background-image: none;
+    background-color: transparent;
+    border-style: none;
+}
+
+table,
+tr,
+td,
+li,
+p,
+div,
+.text {
+    color: ffffff;
+    line-height: 13px;
+    font-size: 11px;
+    font-family: "Lucida Grande", Verdana, sans-serif;
+}
+
+td.text {
+    vertical-align: top;
+}
+
+ExtendedNetwork,
+table.extendedNetwork,
+span.blacktext12 {
+    background: url(http://www.profilerehab.com/pb/myspace/heroes_layout_ext.jpg) no-repeat center center;
+    height: 189px;
+    font-size: 11;
+    vertical-align: top;
+    color: ffffff;
+}
+
+.blacktext12 {
+    color: ffffff !important;
+    font-size: 11px;
+    _font-size: 11px;
+    font-weight: normal;
+    font-family: Century Gothic, Georgia, "Times New Roman", Times, serif;
+    text-align: center top;
+    line-height: 15px;
+    padding: ;
+    margin: ;
+    letter-spacing: 1px;
+    display: block;
+    background-image: ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    text-transform: uppercase;
+}
+
+.nametext {
+    color: ffffff !important;
+    font-size: 16px;
+    _font-size: 16px;
+    font-weight: normal;
+    font-family: Century Gothic, Georgia, "Times New Roman", Times, serif;
+    text-align: left;
+    line-height: 47px;
+    padding: ;
+    margin: ;
+    letter-spacing: 1px;
+    display: block;
+    background-image: ;
+    background-position: ;
+    background-repeat: no-repeat;
+    width: auto;
+    text-transform: uppercase;
+}
+
+.btext {
+    color: ffffff !important;
+    font-size: 14px;
+    _font-size: 14px;
+    font-weight: normal;
+    font-family: Century Gothic, Georgia, "Times New Roman", Times, serif;
+    text-align: left;
+    line-height: 44px;
+    padding: ;
+    margin: ;
+    letter-spacing: 1px;
+    display: block;
+    background-image: ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    text-transform: uppercase;
+}
+
+.orangetext15 {
+    color: ffffff !important;
+    font-size: 14px;
+    _font-size: 14px;
+    font-weight: normal;
+    font-family: Century Gothic, Georgia, "Times New Roman", Times, serif;
+    text-align: left;
+    line-height: 20px;
+    padding: ;
+    margin: ;
+    letter-spacing: 1px;
+    display: block;
+    background-image: ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    text-transform: uppercase;
+}
+
+.whitetext12 {
+    color: ffffff !important;
+    font-size: 14px;
+    _font-size: 14px;
+    font-weight: normal;
+    font-family: Century Gothic, Georgia, "Times New Roman", Times, serif;
+    text-align: left;
+    line-height: 25px;
+    padding: ;
+    margin: ;
+    letter-spacing: 1px;
+    display: block;
+    background-image: ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    text-transform: uppercase;
+}
+
+.redtext,
+.redbtext {
+    color: ffffff;
+    font-family: Century Gothic, Georgia, "Times New Roman", Times, serif;
+    font-size: 12px;
+}
+
+.blacktext10 {
+    color: ffffff;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    padding: ;
+}
+
+.lightbluetext8 {
+    color: ffffff;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+a:link,
+a:visited,
+a.redlink:active,
+a.redlink:visited,
+a.redlink:link,
+a.searchlinksmall:link,
+a.searchlinksmall:visited {
+    color: ffffff !important;
+    * border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    font-weight: normal;
+    text-decoration: none;
+    padding: ;
+}
+
+a:hover,
+a.redlink:hover,
+a.searchlinksmall:hover,
+a:hover img {
+    color: ffffff !important;
+    border-bottom-color: transparent;
+    text-decoration: none;
+    padding: 0;
+}
+
+a.navbar:active,
+a.navbar:visited,
+a.navbar:link {
+    color: ffffff !important;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a.navbar:hover {
+    color: ffffff !important;
+    text-decoration: f1fff7;
+}
+
+- div table tr td table {
+    background-color: transparent !important;
+}
+
+div table tr td table a {
+    zpadding: 0 !important;
+}
+
+div table tr td table font {
+    color: ffffff !important;
+}
+
+</style><style type="text/css">.contactTable {
+    width: 300px !important;
+    height: 150px !important;
+    padding: 0px !important;
+    background-image: url(http://www.profilerehab.com/pb/myspace/heroes_layout_menu.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.contactTable table,
+table.contactTable td {
+    padding: 0px !important;
+    border: 0px;
+    background-color: transparent;
+    background-image: none;
+    line-height: normal;
+}
+
+.contactTable a img {
+    visibility: hidden;
+    border: 0px !important;
+}
+
+.contactTable a {
+    display: block;
+    height: 31px;
+    width: 115px;
+    background-color: transparent;
+    border-bottom: none !important;
+}
+
+.contactTable .text {
+    font-size: 1px !important;
+}
+
+.contactTable .text,
+.contactTable a,
+.contactTable img {
+    filter: none !important;
+}
+
+.contactTable a:hover {
+    background-color: transparent;
+}
+
+.contactTable .whitetext12 {
+    display: none;
+}
+
+.link {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+</style><div class="link"><a href="http://profilerehab.com/theme/myspace/heroes_background_claire"><img src="http://www.profilerehab.com/pb/myspace/myspace_backgrounds_link.jpg" /></a></div>---------------------- < !--<link href="https://nsk-branding.github.io/profile24/rlc-profile-styles.css" type="text/css" rel="stylesheet" /><div id="p2"></div><div id="p3"></div><div id="p4"></div><div id="p5"></div>-->< !-- ****HEADER**** --><tr><td width="800" align="center"></br></td></tr></table><tr><center><div style="border: 0px solid #eb6488; border-radius: 5px; padding: 10px; display: inline-block;"><iframe frameborder="0" width="770" height="290" src="https://nsk-branding.github.io/profile24/" scrolling="no" style="border: none; overflow: hidden;"></iframe></div></center>></tr><br></table></br><body><div class="header"></body></center></a><p align="center"></tr><Style><div></div><style type="text/css">body {
+    background: transparent !important
+}
+
+</style><div style="position:fixed;z-index:-99;width:100%;height:100%;left:0px;top:0px"><center><img src="https://raw.githubusercontent.com/nsk-branding/profile24/refs/heads/main/img/b38d6207-c2a1-488f-8c05-5c428f4d68b9.webp" height="100%" width="100%></center>
+
+<center>
