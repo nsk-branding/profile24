@@ -33,7 +33,6 @@ body {
     margin-left: 0px;
 }
 
-
 table,
 tr,
 td,
@@ -44,6 +43,8 @@ div,
     background-color: transparent !important;
     /* Asegúrate de que todas las tablas y elementos sean transparentes */
     border-style: none;
+    color: #ffffff;
+    /* Texto en blanco */
 }
 
 td.text table table table tr td a {
@@ -65,7 +66,7 @@ table table table table {
     background-image: none;
 }
 
-/* Textos en color naranja con sombra */
+/* Textos en blanco */
 .blacktext12,
 .nametext,
 .btext,
@@ -75,24 +76,10 @@ table table table table {
 .redbtext,
 .blacktext10,
 .lightbluetext8 {
-    color: #FFA500 !important;
-    /* Color naranja */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7), 0 0 25px rgba(255, 165, 0, 0.5);
-    /* Sombra del texto */
+    color: #ffffff !important;
+    /* Color blanco */
     font-family: "Century Gothic", Georgia, "Times New Roman", Times, serif;
     font-weight: bold;
-}
-
-/* Ajustes de tamaño y espaciado */
-.blacktext12,
-.nametext,
-.btext,
-.orangetext15,
-.whitetext12 {
-    font-size: 14px;
-    /* Ajusta según sea necesario */
-    line-height: normal;
-    /* Ajusta según sea necesario */
 }
 
 /* Enlaces */
@@ -154,6 +141,15 @@ img {
     border-radius: 5px !important;
     padding: 0 !important;
     background-color: transparent !important;
+}
+
+/* Estilo para las líneas horizontales */
+hr {
+    color: #FFA500;
+    background-color: #FFA500;
+    border: none;
+    height: 1px;
+    margin: 5px auto;
 }
 
 </style>
