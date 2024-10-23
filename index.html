@@ -1,114 +1,224 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barra de Navegación Espectacular</title>
+    <title>Profile's_Header</title>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Roboto", sans-serif;
-        }
-
+        /* General Styles */
         body {
-            background-color: transparent;
-            /* Fondo oscuro para resaltar el navbar */
-        }
-
-        nav {
-            background-color: transparent;
-            /* Sin fondo */
-            height: 80px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .nav-links {
-            list-style-type: none;
-            display: flex;
-            gap: 40px;
-            /* Espacio entre los botones */
-        }
-
-        .nav-links li {
-            position: relative;
+            background-color: transparent !important;
+            margin: 0;
+            font-family: "Lucida Grande", Verdana, sans-serif;
+            ;
         }
 
         a {
-            color: #FFA500;
-            /* Color naranja */
             text-decoration: none;
-            padding: 15px 20px;
-            /* Espaciado interno */
-            font-size: 18px;
-            /* Tamaño de fuente */
-            transition: color 0.3s ease, transform 0.3s ease;
-            /* Transiciones suaves */
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-            /* Sombra del texto */
+            
         }
 
-        a::before {
-            content: "";
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(to top, rgba(235, 100, 136, 0), rgb(0, 0, 0));
+            padding: 20px 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .navbar a {
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ff6f00;
+            border-radius: 5px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease, border 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border-color: #ff6f00;
+        }
+
+        /* Header with SVG */
+        header {
+            position: relative;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            overflow: hidden;
+        }
+
+        .header-img {
             position: absolute;
-            left: 50%;
-            bottom: -10px;
-            /* Ajuste de la posición */
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 5px;
-            /* Grosor de la línea */
-            background-color: #7a0e88;
-            /* Color dorado para la línea */
-            transform: translateX(-50%) scaleX(0);
-            /* Inicialmente oculta */
-            transition: transform 0.3s ease;
-            /* Transición suave para la línea */
+            height: 100%;
+            object-fit: contain;
+            z-index: 0;
         }
 
-        a:hover {
-            color: white;
-            /* Cambia el color del texto al pasar el ratón */
-            transform: scale(1.1);
-            /* Efecto de aumento al pasar el ratón */
+        .header-svg {
+            position: absolute;
+            bottom: -150px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            text-shadow: 0 0 20px #ff6f00;
+            /* Golden glow */
         }
 
-        a:hover::before {
-            transform: translateX(-50%) scaleX(1);
-            /* Expande la línea inferior al pasar el ratón */
+        /* Animation for SVG text */
+        @keyframes gradientAnimation {
+            0% {
+                stop-color: #ff6f00;
+            }
+
+            50% {
+                stop-color: #ff6f00;
+            }
+
+            100% {
+                stop-color: #ff6f00;
+            }
+        }
+
+        .header-svg:hover #grad1 stop {
+            animation: gradientAnimation 3s infinite;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 10px;
+            background-color: transparent;
+        }
+
+        .card {
+            background-color: transparent;
+            border: 2px solid #ff6f00;
+            border-radius: 5px;
+            padding: 20px;
+            color: #000000;
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px 10px #ff6f00;
+            /* Golden shadow */
+            border-color: #ff6f00;
+        }
+
+        .card h3 {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #ff6f00;
+        }
+
+        .card p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .card a {
+            color: #ff6f00;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            border: 1px solid #ff6f00;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .card a:hover {
+            color: #fff;
+            background-color: #ff6f00;
+        }
+
+        .image-container {
+            width: 100%;
+            padding-top: 100%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            border: 2px solid #ff6f00;
+        }
+
+        .image-container img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 
 <body>
-    <nav>
-        <ul class="nav-links">
-            <li><a href="https://www.utherverse.com/net/home.aspx" target="_blank">Home</a></li>
-            <li><a href="https://supportclassic.redlightcenter.com/support/home" target="_blank">Support</a></li>
-            <li><a href="https://forums.utherverse.com/" target="_blank">Forums</a></li>
-            <li><a href="https://www.utherverse.com/Clothing/" target="_blank">Clothing</a></li>
-            <li><a href="https://www.utherverse.com/net/search/search.aspx" target="_blank">Search</a></li>
-        </ul>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="https://www.utherverse.com/net/home.aspx" target="_blank">Home</a>
+        <a href="https://supportclassic.redlightcenter.com/support/home" target="_blank">Support</a>
+        <a href="https://forums.utherverse.com/" target="_blank">Forums</a>
+        <a href="https://www.utherverse.com/Clothing/" target="_blank">Clothing</a>
+        <a href="https://www.utherverse.com/net/search/search.aspx" target="_blank">Search</a>
     </nav>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const navLinks = document.querySelectorAll('.nav-links a');
+    <!-- Header with SVG -->
+    <header>
+        <img src="./img/Marrok.png" alt="Background Image" class="header-img">
+        <svg width="850" height="450" xmlns="http://www.w3.org/2000/svg" class="header-svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#ff6f00; stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:white; stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <text x="50%" y="50%" font-family="'Great Vibes', cursive" font-size="100" fill="url(#grad1)"
+                text-anchor="middle" alignment-baseline="middle">Marrok</text>
+        </svg>
+    </header>
 
-            navLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    alert(`Has hecho clic en ${link.textContent}`);
-                });
-            });
-        });
-    </script>
+    <!-- Gallery -->
+    <div class="gallery">
+        <div class="image-container">
+            <img src="/img/02-banner-512-X512-spammer-marrok.jpg" alt="banner">
+        </div>
+    
+        <div class="image-container">
+            <img src="/img/06-motown-disco-club-logo-business-banner.png" alt="Hope Group">
+        </div>
+    
+        <div class="image-container">
+            <img src="/img/03-Logo-DRMC.jpg" alt="Angeles">
+        </div>
+    
+        <div class="image-container">
+            <img src="/img/04-MARROKCREATIONSBUSINESSBANNER20-FINAL.png" alt="Hope Group">
+        </div>
+    </div>
+
 </body>
 
 </html>
