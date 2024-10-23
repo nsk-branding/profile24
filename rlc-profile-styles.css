@@ -149,4 +149,11 @@ table.contactTable td {
     left: 0;
 }
 
+img {
+    border: 2px solid #ff6f00 !important;
+    border-radius: 5px !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+
 </style>
