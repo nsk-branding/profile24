@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería con Marcos Dorado-Lila</title>
+    <style>
+        /* Fondo general de la página */
+        body {
+            background-color: transparent;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Contenedor de la galería */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        /* Marco con degradado animado y fondo transparente */
+        .photo-frame {
+            position: relative;
+            border-radius: 15px;
+            padding: 5px;
+            /* Espacio para mostrar el borde degradado */
+            background: linear-gradient(145deg, #FFD700, #3925ce);
+            background-size: 400% 400%;
+            /* Movimiento suave */
+            animation: gradientAnimation 6s ease infinite;
+        }
+
+        /* Animación de degradado dorado a lila */
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Fondo de la imagen transparente dentro del marco */
+        .photo-frame::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: transparent;
+            border-radius: 10px;
+            z-index: 1;
+        }
+
+        /* Imagen dentro del marco */
+        .photo-frame img {
+            position: relative;
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            z-index: 2;
+        }
+
+        /* Efecto hover para la imagen */
+        .photo-frame:hover img {
+            transform: scale(1.05);
+            border-color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <div class="photo-frame">
+            <img src="/img/4-princess-purple-radio.png" alt="Foto 1">
+        </div>
+        <div class="photo-frame">
+            <img src="/img/3-Bloomingdeals-logo-1-512.jpg" alt="Foto 4">
+        </div>
+        <div class="photo-frame">
+            <img src="/img/2-UTHERVERSE-loyal15.gif" alt="Foto 3">
+        </div>
+        <div class="photo-frame">
+            <img src="/img/1-UTHERVERSE-15YEARS.png" alt="Foto 2">
+        </div>
+        
+        
+        
+    </div>
+</body>
+
+</html>
