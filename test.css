@@ -43,8 +43,8 @@ div,
     background-color: transparent !important;
     /* Asegúrate de que todas las tablas y elementos sean transparentes */
     border-style: none;
-    color: #ffffff;
-    /* Texto en blanco */
+    color: #74f0ff !important;
+    /* Texto en color #74f0ff */
 }
 
 td.text table table table tr td a {
@@ -66,7 +66,7 @@ table table table table {
     background-image: none;
 }
 
-/* Textos en blanco */
+/* Textos en color #74f0ff */
 .blacktext12,
 .nametext,
 .btext,
@@ -76,8 +76,8 @@ table table table table {
 .redbtext,
 .blacktext10,
 .lightbluetext8 {
-    color: #ffffff !important;
-    /* Color blanco */
+    color: #74f0ff !important;
+    /* Color #74f0ff */
     font-family: "Century Gothic", Georgia, "Times New Roman", Times, serif;
     font-weight: bold;
 }
@@ -136,13 +136,6 @@ table.contactTable td {
     left: 0;
 }
 
-img {
-    border: 2px solid #ff6f00 !important;
-    border-radius: 5px !important;
-    padding: 0 !important;
-    background-color: transparent !important;
-}
-
 /* Estilo para las líneas horizontales */
 hr {
     color: #FFA500;
@@ -150,6 +143,20 @@ hr {
     border: none;
     height: 1px;
     margin: 5px auto;
+}
+
+/* Estilos personalizados para las secciones */
+table#MSCodesFixer>tbody>tr>td>table>tbody:first-of-type>tr>td>div:first-of-type {
+    border-radius: 2px 2px 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0) !important;
+}
+
+/* Aplicar estilos a las secciones específicas */
+div.section-header {
+    border-radius: 2px 2px 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0) !important;
 }
 
 </style>
